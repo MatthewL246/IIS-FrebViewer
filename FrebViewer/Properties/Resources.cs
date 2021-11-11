@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Resources;
 using System.Runtime.CompilerServices;
 
-namespace FREBUI.Properties
+namespace FrebViewer.Properties
 {
     [GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [DebuggerNonUserCode]
@@ -23,7 +23,7 @@ namespace FREBUI.Properties
             {
                 if (Resources.resourceMan == null)
                 {
-                    Resources.resourceMan = new ResourceManager("FREBUI.Properties.Resources", typeof(Resources).Assembly);
+                    Resources.resourceMan = new ResourceManager("FrebViewer.Properties.Resources", typeof(Resources).Assembly);
                 }
                 return Resources.resourceMan;
             }

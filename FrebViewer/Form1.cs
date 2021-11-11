@@ -6,7 +6,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace FREBUI
+namespace FrebViewer
 {
     public class Form1 : Form
     {
@@ -495,7 +495,7 @@ namespace FREBUI
             base.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Segoe UI", 9f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             base.Name = "Form1";
-            this.Text = "FREBUI - navigate your FREB traces easily";
+            this.Text = "FrebViewer - navigate your FREB traces easily";
             base.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             base.Load += new System.EventHandler(Form1_Load);
             base.Resize += new System.EventHandler(Form1_Resize);

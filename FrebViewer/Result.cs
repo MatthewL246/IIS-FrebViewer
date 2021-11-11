@@ -1,4 +1,4 @@
-namespace FREBUI
+namespace FrebViewer
 {
     public class Result
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace FREBUI
+namespace FrebViewer
 {
     internal static class Program
     {
