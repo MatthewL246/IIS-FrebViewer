@@ -1,0 +1,30 @@
+name: .NET Build
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up the .NET SDK
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore -v normal
+
+      - name: Build .NET project (Debug)
+        run: dotnet build -v normal -c debug
+
+      - name: Build .NET project (Release)
+        run: dotnet build -v normal -c release
+
+      - name: Upload build results
+        uses: actions/upload-artifact@v2
+        with:
+          name: Build results
+          path: bin/
